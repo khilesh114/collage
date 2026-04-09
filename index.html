@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="डॉ. भावर सिंह पोर्टे आदिवासी कॉलेज, मरवाही - राजनीति विज्ञान 4th Semester Project Page" />
+  <title>राजनीति विज्ञान - 4th Semester | Dr. Bhawar Singh Porte College</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ===== CSS RESET & BASE ===== */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --primary:       #1a4fa0;
+      --primary-dark:  #0d3478;
+      --primary-light: #2d6bdf;
+      --accent:        #e8f0fe;
+      --accent2:       #d0e4ff;
+      --white:         #ffffff;
+      --text-dark:     #1a2540;
+      --text-mid:      #3a4a6b;
+      --text-light:    #5a6a8b;
+      --border:        #c5d8f8;
+      --shadow-sm:     0 2px 8px rgba(26, 79, 160, 0.10);
+      --shadow-md:     0 6px 24px rgba(26, 79, 160, 0.16);
+      --shadow-lg:     0 12px 40px rgba(26, 79, 160, 0.20);
+      --radius-md:     12px;
+      --radius-lg:     20px;
+      --radius-xl:     28px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Noto Sans Devanagari', Arial, sans-serif;
+      background: linear-gradient(135deg, #e8f0fe 0%, #f0f6ff 50%, #ddeeff 100%);
+      min-height: 100vh;
+      color: var(--text-dark);
+      line-height: 1.7;
+    }
+
+    /* ===== HEADER ===== */
+    header {
+      background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 60%, var(--primary-light) 100%);
+      color: var(--white);
+      padding: 0;
+      position: relative;
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+    }
+
+    header::before {
+      content: '';
+      position: absolute;
+      top: -60px; right: -60px;
+      width: 300px; height: 300px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.05);
+      pointer-events: none;
+    }
+    header::after {
+      content: '';
+      position: absolute;
+      bottom: -80px; left: -40px;
+      width: 220px; height: 220px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.04);
+      pointer-events: none;
+    }
+
+    .header-inner {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 48px 24px 40px;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .college-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(255,255,255,0.22);
+      border: 1.5px solid rgba(255,255,255,0.55);
+      border-radius: 50px;
+      padding: 8px 22px;
+      font-size: 0.9rem;
+      letter-spacing: 0.06em;
+      font-weight: 700;
+      color: #ffffff;
+      text-shadow: 0 1px 4px rgba(0,0,0,0.25);
+      margin-bottom: 20px;
+      backdrop-filter: blur(10px);
+      white-space: nowrap;
+    }
+
+    .college-badge .dot {
+      width: 8px; height: 8px;
+      background: #7dd3fc;
+      border-radius: 50%;
+      display: inline-block;
+      flex-shrink: 0;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50%       { opacity: 0.5; transform: scale(1.4); }
+    }
+
+    header h1 {
+      font-size: clamp(1.5rem, 4vw, 2.4rem);
+      font-weight: 800;
+      letter-spacing: 0.01em;
+      line-height: 1.3;
+      margin-bottom: 14px;
+      text-shadow: 0 2px 12px rgba(0,0,0,0.18);
+    }
+
+    header .subheading {
+      font-size: clamp(1rem, 2.5vw, 1.25rem);
+      font-weight: 400;
+      opacity: 0.88;
+      background: rgba(255,255,255,0.12);
+      display: inline-block;
+      padding: 8px 28px;
+      border-radius: 50px;
+      border: 1px solid rgba(255,255,255,0.2);
+      margin-top: 4px;
+    }
+
+    /* ===== MAIN CONTENT ===== */
+    main {
+      max-width: 900px;
+      margin: -32px auto 0;
+      padding: 0 16px 48px;
+      position: relative;
+      z-index: 2;
+    }
+
+    /* ===== CARD ===== */
+    .card {
+      background: var(--white);
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow-md);
+      padding: 36px 40px;
+      margin-bottom: 28px;
+      border: 1px solid var(--border);
+      transition: box-shadow 0.3s ease, transform 0.3s ease;
+    }
+
+    .card:hover {
+      box-shadow: var(--shadow-lg);
+      transform: translateY(-4px);
+    }
+
+    .card-icon {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    .card-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--primary);
+      border-left: 4px solid var(--primary-light);
+      padding-left: 14px;
+      margin-bottom: 24px;
+      letter-spacing: 0.01em;
+    }
+
+    /* ===== PROFESSOR SECTION ===== */
+    .professor-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+
+    .prof-item {
+      background: var(--accent);
+      border-radius: var(--radius-md);
+      padding: 20px 22px;
+      border: 1px solid var(--border);
+      transition: background 0.25s;
+    }
+
+    .prof-item:hover {
+      background: var(--accent2);
+    }
+
+    .prof-label {
+      font-size: 0.78rem;
+      color: var(--text-light);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 6px;
+    }
+
+    .prof-value {
+      font-size: 1.08rem;
+      font-weight: 700;
+      color: var(--primary-dark);
+    }
+
+    .prof-value a {
+      color: var(--primary);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .prof-value a:hover { color: var(--primary-dark); text-decoration: underline; }
+
+    /* ===== SUBJECTS SECTION ===== */
+    .subject-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .subject-list li {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      background: var(--accent);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 16px 20px;
+      font-size: 1rem;
+      font-weight: 500;
+      color: var(--text-mid);
+      cursor: default;
+      transition: background 0.25s, transform 0.22s, border-color 0.22s;
+    }
+
+    .subject-list li:hover {
+      background: var(--accent2);
+      border-color: var(--primary-light);
+      transform: translateX(6px);
+      color: var(--primary-dark);
+    }
+
+    .subject-num {
+      min-width: 36px;
+      height: 36px;
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+      color: #fff;
+      border-radius: 50%;
+      font-size: 0.85rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    /* ===== DOWNLOAD BUTTON ===== */
+    .download-wrap {
+      text-align: center;
+      margin-top: 28px;
+    }
+
+    .btn-download {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+      color: var(--white);
+      font-family: inherit;
+      font-size: 1.05rem;
+      font-weight: 700;
+      padding: 16px 40px;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      text-decoration: none;
+      box-shadow: 0 4px 20px rgba(26, 79, 160, 0.35);
+      transition: transform 0.22s ease, box-shadow 0.22s ease, background 0.22s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .btn-download::before {
+      content: '';
+      position: absolute;
+      top: 0; left: -100%;
+      width: 100%; height: 100%;
+      background: linear-gradient(120deg, transparent 0%, rgba(255,255,255,0.18) 50%, transparent 100%);
+      transition: left 0.45s ease;
+    }
+
+    .btn-download:hover::before { left: 100%; }
+
+    .btn-download:hover {
+      transform: translateY(-3px) scale(1.03);
+      box-shadow: 0 8px 30px rgba(26, 79, 160, 0.45);
+      background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+    }
+
+    .btn-download:active {
+      transform: translateY(0) scale(0.98);
+    }
+
+    .btn-download svg {
+      width: 20px; height: 20px;
+      flex-shrink: 0;
+      transition: transform 0.22s;
+    }
+    .btn-download:hover svg { transform: translateY(2px); }
+
+    /* ===== CREDITS SECTION ===== */
+    .credits-card {
+      background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+      color: var(--white);
+      border: none;
+      text-align: center;
+    }
+    .credits-card:hover {
+      box-shadow: var(--shadow-lg);
+      transform: translateY(-4px);
+    }
+
+    .credits-card .card-title {
+      color: rgba(255,255,255,0.75);
+      border-left-color: rgba(255,255,255,0.4);
+    }
+
+    .credits-name {
+      font-size: 1.35rem;
+      font-weight: 800;
+      letter-spacing: 0.02em;
+    }
+
+    .credits-note {
+      font-size: 0.88rem;
+      opacity: 0.7;
+      margin-top: 6px;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: var(--primary-dark);
+      color: rgba(255,255,255,0.72);
+      text-align: center;
+      padding: 24px 16px;
+      font-size: 0.85rem;
+      letter-spacing: 0.02em;
+    }
+
+    footer strong {
+      color: rgba(255,255,255,0.95);
+    }
+
+    .footer-divider {
+      width: 60px;
+      height: 2px;
+      background: rgba(255,255,255,0.2);
+      margin: 10px auto;
+      border-radius: 2px;
+    }
+
+    /* ===== DIVIDER ===== */
+    .section-divider {
+      border: none;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--border), transparent);
+      margin: 4px 0 28px;
+    }
+
+    /* ===== GREETING BAR ===== */
+    .greeting-bar {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background: #ffffff;
+      border: none;
+      border-radius: 50px;
+      padding: 10px 24px;
+      font-size: 1rem;
+      font-weight: 700;
+      color: #0d3478;
+      margin-bottom: 18px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+      animation: fadeSlideIn 0.8s ease both;
+      letter-spacing: 0.03em;
+    }
+
+    .greeting-emoji {
+      font-size: 1.3rem;
+      animation: wiggle 2.5s ease infinite;
+    }
+
+    @keyframes wiggle {
+      0%, 100% { transform: rotate(0deg); }
+      20%       { transform: rotate(-12deg); }
+      40%       { transform: rotate(10deg); }
+      60%       { transform: rotate(-6deg); }
+      80%       { transform: rotate(4deg); }
+    }
+
+    @keyframes fadeSlideIn {
+      from { opacity: 0; transform: translateY(-14px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .live-clock {
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: #1a4fa0;
+      background: #e8f0fe;
+      padding: 3px 12px;
+      border-radius: 20px;
+      letter-spacing: 0.06em;
+      border: 1px solid #c5d8f8;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 620px) {
+      .card { padding: 24px 18px; }
+      .professor-grid { grid-template-columns: 1fr; }
+      header h1 { font-size: 1.4rem; }
+      .header-inner { padding: 36px 16px 32px; }
+      .btn-download { padding: 14px 28px; font-size: 0.97rem; }
+      .greeting-bar { font-size: 0.88rem; padding: 7px 16px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ====== HEADER ====== -->
+  <header>
+    <div class="header-inner">
+      <!-- Dynamic Greeting -->
+      <div class="greeting-bar" id="greeting-bar">
+        <span class="greeting-emoji" id="greeting-emoji">🙏</span>
+        <span id="greeting-text">नमस्ते!</span>
+        <span class="live-clock" id="live-clock"></span>
+      </div>
+
+      <div class="college-badge">
+        <span class="dot"></span>
+        शैक्षणिक सत्र <span id="session-badge">...</span>
+      </div>
+      <h1>🏛️ डॉ. भावर सिंह पोर्टे आदिवासी कॉलेज, मरवाही</h1>
+      <p class="subheading">📚 राजनीति विज्ञान (Political Science) — 4th Semester</p>
+    </div>
+  </header>
+
+  <!-- ====== MAIN ====== -->
+  <main>
+
+    <!-- Professor Info Card -->
+    <div class="card">
+      <span class="card-icon">👨‍🏫</span>
+      <h2 class="card-title">प्राध्यापक की जानकारी</h2>
+      <hr class="section-divider" />
+      <div class="professor-grid">
+        <div class="prof-item">
+          <div class="prof-label">प्रोफेसर का नाम</div>
+          <div class="prof-value">युवराज साहू सर</div>
+        </div>
+        <div class="prof-item">
+          <div class="prof-label">संपर्क नंबर</div>
+          <div class="prof-value">
+            <a href="tel:9669858787" id="professor-phone">📞 9669858787</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Subjects Card -->
+    <div class="card">
+      <span class="card-icon">📋</span>
+      <h2 class="card-title">विषय सूची (Subjects)</h2>
+      <hr class="section-divider" />
+      <ul class="subject-list" id="subject-list">
+        <li>
+          <span class="subject-num">1</span>
+          भारत में राज्यों की राजनीति
+        </li>
+        <li>
+          <span class="subject-num">2</span>
+          राजनीति के सिद्धांत
+        </li>
+        <li>
+          <span class="subject-num">3</span>
+          मानव अधिकार — समस्याएं व संभावनाएं
+        </li>
+        <li>
+          <span class="subject-num">4</span>
+          भारत में स्थानीय स्वशासन
+        </li>
+        <li>
+          <span class="subject-num">5</span>
+          पर्यावरण राजनीति
+        </li>
+      </ul>
+
+      <!-- Download Button -->
+      <div class="download-wrap">
+        <a
+          href="syllabus.pdf"
+          download="syllabus.pdf"
+          class="btn-download"
+          id="syllabus-download-btn"
+          title="सिलेबस PDF डाउनलोड करें"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+          सिलेबस डाउनलोड करें
+        </a>
+      </div>
+    </div>
+
+    <!-- Credits Card -->
+    <div class="card credits-card">
+      <h2 class="card-title">✨ निर्माता</h2>
+      <hr class="section-divider" style="background: linear-gradient(90deg, transparent, rgba(255,255,255,0.25), transparent);" />
+      <p class="credits-name">खिलेश प्रजापति</p>
+      <p class="credits-note">राजनीति विज्ञान — 4th Semester &nbsp;|&nbsp; शैक्षणिक सत्र <span id="session-credits">...</span></p>
+    </div>
+
+  </main>
+
+  <!-- ====== FOOTER ====== -->
+  <footer>
+    <p><strong>डॉ. भावर सिंह पोर्टे आदिवासी कॉलेज, मरवाही</strong></p>
+    <div class="footer-divider"></div>
+    <p>राजनीति विज्ञान विभाग &nbsp;|&nbsp; 4th Semester &nbsp;|&nbsp; सत्र <span id="session-footer">...</span></p>
+    <p style="margin-top: 6px; font-size:0.78rem; opacity:0.55;">
+      © 2025-26 सर्वाधिकार सुरक्षित &nbsp;·&nbsp; निर्मित: खिलेश प्रजापति
+    </p>
+  </footer>
+
+<script>
+  // ===== AUTO SESSION YEAR (Indian Academic Calendar) =====
+  // June–Dec  → current year start  (e.g. Jun 2026 → 2026-27)
+  // Jan–May   → previous year start (e.g. Apr 2026 → 2025-26)
+  function getSessionYear() {
+    const now   = new Date();
+    const year  = now.getFullYear();
+    const month = now.getMonth() + 1; // 1 = Jan, 6 = June
+    const startYear = month >= 6 ? year : year - 1;
+    const endYY     = String(startYear + 1).slice(-2); // last 2 digits
+    return startYear + '-' + endYY;
+  }
+
+  function applySession() {
+    const session = getSessionYear();
+    ['session-badge', 'session-credits', 'session-footer'].forEach(function(id) {
+      const el = document.getElementById(id);
+      if (el) el.textContent = session;
+    });
+  }
+
+  // ===== DYNAMIC GREETING BASED ON DEVICE TIME =====
+  function updateGreeting() {
+    const now  = new Date();
+    const hour = now.getHours();
+    const min  = now.getMinutes();
+    const sec  = now.getSeconds();
+
+    const hh = String(hour).padStart(2, '0');
+    const mm = String(min).padStart(2, '0');
+    const ss = String(sec).padStart(2, '0');
+
+    let greetText, emoji;
+    if (hour >= 5 && hour < 12) {
+      greetText = 'सुप्रभात! शुभ प्रभात';
+      emoji     = '🌅';
+    } else if (hour >= 12 && hour < 17) {
+      greetText = 'नमस्कार! शुभ दोपहर';
+      emoji     = '☀️';
+    } else if (hour >= 17 && hour < 20) {
+      greetText = 'शुभ संध्या! Good Evening';
+      emoji     = '🌇';
+    } else {
+      greetText = 'शुभ रात्रि! Good Night';
+      emoji     = '🌙';
+    }
+
+    document.getElementById('greeting-text').textContent = greetText;
+    document.getElementById('greeting-emoji').textContent = emoji;
+    document.getElementById('live-clock').textContent     = hh + ':' + mm + ':' + ss;
+  }
+
+  // ===== INIT =====
+  applySession();          // Set session year immediately on load
+  updateGreeting();        // Set greeting immediately
+  setInterval(updateGreeting, 1000); // Update clock every second
+
+  // Re-check session at midnight (in case browser stays open overnight)
+  setInterval(applySession, 60 * 60 * 1000); // every hour
+</script>
+</body>
+</html>
