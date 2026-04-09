@@ -1,44 +1,51 @@
 <!DOCTYPE html>
 <html lang="hi">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="डॉ. भावर सिंह पोर्टे आदिवासी कॉलेज, मरवाही - राजनीति विज्ञान 4th Semester Project Page" />
-  <title>राजनीति विज्ञान - 4th Semester | Dr. Bhawar Singh Porte College</title>
+  <meta name="description"
+    content="डॉ. भंवर  सिंह पोर्टे आदिवासी कॉलेज, मरवाही - राजनीति विज्ञान 4th Semester Project Page" />
+  <title>राजनीति विज्ञान - 4th Semester | Dr. Bhavar Singh Porte College</title>
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
 
   <style>
     /* ===== CSS RESET & BASE ===== */
-    *, *::before, *::after {
+    *,
+    *::before,
+    *::after {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
     }
 
     :root {
-      --primary:       #1a4fa0;
-      --primary-dark:  #0d3478;
+      --primary: #1a4fa0;
+      --primary-dark: #0d3478;
       --primary-light: #2d6bdf;
-      --accent:        #e8f0fe;
-      --accent2:       #d0e4ff;
-      --white:         #ffffff;
-      --text-dark:     #1a2540;
-      --text-mid:      #3a4a6b;
-      --text-light:    #5a6a8b;
-      --border:        #c5d8f8;
-      --shadow-sm:     0 2px 8px rgba(26, 79, 160, 0.10);
-      --shadow-md:     0 6px 24px rgba(26, 79, 160, 0.16);
-      --shadow-lg:     0 12px 40px rgba(26, 79, 160, 0.20);
-      --radius-md:     12px;
-      --radius-lg:     20px;
-      --radius-xl:     28px;
+      --accent: #e8f0fe;
+      --accent2: #d0e4ff;
+      --white: #ffffff;
+      --text-dark: #1a2540;
+      --text-mid: #3a4a6b;
+      --text-light: #5a6a8b;
+      --border: #c5d8f8;
+      --shadow-sm: 0 2px 8px rgba(26, 79, 160, 0.10);
+      --shadow-md: 0 6px 24px rgba(26, 79, 160, 0.16);
+      --shadow-lg: 0 12px 40px rgba(26, 79, 160, 0.20);
+      --radius-md: 12px;
+      --radius-lg: 20px;
+      --radius-xl: 28px;
     }
 
-    html { scroll-behavior: smooth; }
+    html {
+      scroll-behavior: smooth;
+    }
 
     body {
       font-family: 'Noto Sans Devanagari', Arial, sans-serif;
@@ -61,19 +68,24 @@
     header::before {
       content: '';
       position: absolute;
-      top: -60px; right: -60px;
-      width: 300px; height: 300px;
+      top: -60px;
+      right: -60px;
+      width: 300px;
+      height: 300px;
       border-radius: 50%;
-      background: rgba(255,255,255,0.05);
+      background: rgba(255, 255, 255, 0.05);
       pointer-events: none;
     }
+
     header::after {
       content: '';
       position: absolute;
-      bottom: -80px; left: -40px;
-      width: 220px; height: 220px;
+      bottom: -80px;
+      left: -40px;
+      width: 220px;
+      height: 220px;
       border-radius: 50%;
-      background: rgba(255,255,255,0.04);
+      background: rgba(255, 255, 255, 0.04);
       pointer-events: none;
     }
 
@@ -90,22 +102,23 @@
       display: inline-flex;
       align-items: center;
       gap: 10px;
-      background: rgba(255,255,255,0.22);
-      border: 1.5px solid rgba(255,255,255,0.55);
+      background: rgba(255, 255, 255, 0.22);
+      border: 1.5px solid rgba(255, 255, 255, 0.55);
       border-radius: 50px;
       padding: 8px 22px;
       font-size: 0.9rem;
       letter-spacing: 0.06em;
       font-weight: 700;
       color: #ffffff;
-      text-shadow: 0 1px 4px rgba(0,0,0,0.25);
+      text-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
       margin-bottom: 20px;
       backdrop-filter: blur(10px);
       white-space: nowrap;
     }
 
     .college-badge .dot {
-      width: 8px; height: 8px;
+      width: 8px;
+      height: 8px;
       background: #7dd3fc;
       border-radius: 50%;
       display: inline-block;
@@ -114,8 +127,17 @@
     }
 
     @keyframes pulse {
-      0%, 100% { opacity: 1; transform: scale(1); }
-      50%       { opacity: 0.5; transform: scale(1.4); }
+
+      0%,
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+
+      50% {
+        opacity: 0.5;
+        transform: scale(1.4);
+      }
     }
 
     header h1 {
@@ -124,18 +146,18 @@
       letter-spacing: 0.01em;
       line-height: 1.3;
       margin-bottom: 14px;
-      text-shadow: 0 2px 12px rgba(0,0,0,0.18);
+      text-shadow: 0 2px 12px rgba(0, 0, 0, 0.18);
     }
 
     header .subheading {
       font-size: clamp(1rem, 2.5vw, 1.25rem);
       font-weight: 400;
       opacity: 0.88;
-      background: rgba(255,255,255,0.12);
+      background: rgba(255, 255, 255, 0.12);
       display: inline-block;
       padding: 8px 28px;
       border-radius: 50px;
-      border: 1px solid rgba(255,255,255,0.2);
+      border: 1px solid rgba(255, 255, 255, 0.2);
       margin-top: 4px;
     }
 
@@ -219,7 +241,11 @@
       text-decoration: none;
       transition: color 0.2s;
     }
-    .prof-value a:hover { color: var(--primary-dark); text-decoration: underline; }
+
+    .prof-value a:hover {
+      color: var(--primary-dark);
+      text-decoration: underline;
+    }
 
     /* ===== SUBJECTS SECTION ===== */
     .subject-list {
@@ -294,13 +320,17 @@
     .btn-download::before {
       content: '';
       position: absolute;
-      top: 0; left: -100%;
-      width: 100%; height: 100%;
-      background: linear-gradient(120deg, transparent 0%, rgba(255,255,255,0.18) 50%, transparent 100%);
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(120deg, transparent 0%, rgba(255, 255, 255, 0.18) 50%, transparent 100%);
       transition: left 0.45s ease;
     }
 
-    .btn-download:hover::before { left: 100%; }
+    .btn-download:hover::before {
+      left: 100%;
+    }
 
     .btn-download:hover {
       transform: translateY(-3px) scale(1.03);
@@ -313,11 +343,15 @@
     }
 
     .btn-download svg {
-      width: 20px; height: 20px;
+      width: 20px;
+      height: 20px;
       flex-shrink: 0;
       transition: transform 0.22s;
     }
-    .btn-download:hover svg { transform: translateY(2px); }
+
+    .btn-download:hover svg {
+      transform: translateY(2px);
+    }
 
     /* ===== CREDITS SECTION ===== */
     .credits-card {
@@ -326,14 +360,15 @@
       border: none;
       text-align: center;
     }
+
     .credits-card:hover {
       box-shadow: var(--shadow-lg);
       transform: translateY(-4px);
     }
 
     .credits-card .card-title {
-      color: rgba(255,255,255,0.75);
-      border-left-color: rgba(255,255,255,0.4);
+      color: rgba(255, 255, 255, 0.75);
+      border-left-color: rgba(255, 255, 255, 0.4);
     }
 
     .credits-name {
@@ -351,7 +386,7 @@
     /* ===== FOOTER ===== */
     footer {
       background: var(--primary-dark);
-      color: rgba(255,255,255,0.72);
+      color: rgba(255, 255, 255, 0.72);
       text-align: center;
       padding: 24px 16px;
       font-size: 0.85rem;
@@ -359,13 +394,13 @@
     }
 
     footer strong {
-      color: rgba(255,255,255,0.95);
+      color: rgba(255, 255, 255, 0.95);
     }
 
     .footer-divider {
       width: 60px;
       height: 2px;
-      background: rgba(255,255,255,0.2);
+      background: rgba(255, 255, 255, 0.2);
       margin: 10px auto;
       border-radius: 2px;
     }
@@ -402,16 +437,39 @@
     }
 
     @keyframes wiggle {
-      0%, 100% { transform: rotate(0deg); }
-      20%       { transform: rotate(-12deg); }
-      40%       { transform: rotate(10deg); }
-      60%       { transform: rotate(-6deg); }
-      80%       { transform: rotate(4deg); }
+
+      0%,
+      100% {
+        transform: rotate(0deg);
+      }
+
+      20% {
+        transform: rotate(-12deg);
+      }
+
+      40% {
+        transform: rotate(10deg);
+      }
+
+      60% {
+        transform: rotate(-6deg);
+      }
+
+      80% {
+        transform: rotate(4deg);
+      }
     }
 
     @keyframes fadeSlideIn {
-      from { opacity: 0; transform: translateY(-14px); }
-      to   { opacity: 1; transform: translateY(0); }
+      from {
+        opacity: 0;
+        transform: translateY(-14px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     .live-clock {
@@ -427,15 +485,35 @@
 
     /* ===== RESPONSIVE ===== */
     @media (max-width: 620px) {
-      .card { padding: 24px 18px; }
-      .professor-grid { grid-template-columns: 1fr; }
-      header h1 { font-size: 1.4rem; }
-      .header-inner { padding: 36px 16px 32px; }
-      .btn-download { padding: 14px 28px; font-size: 0.97rem; }
-      .greeting-bar { font-size: 0.88rem; padding: 7px 16px; }
+      .card {
+        padding: 24px 18px;
+      }
+
+      .professor-grid {
+        grid-template-columns: 1fr;
+      }
+
+      header h1 {
+        font-size: 1.4rem;
+      }
+
+      .header-inner {
+        padding: 36px 16px 32px;
+      }
+
+      .btn-download {
+        padding: 14px 28px;
+        font-size: 0.97rem;
+      }
+
+      .greeting-bar {
+        font-size: 0.88rem;
+        padding: 7px 16px;
+      }
     }
   </style>
 </head>
+
 <body>
 
   <!-- ====== HEADER ====== -->
@@ -452,7 +530,7 @@
         <span class="dot"></span>
         शैक्षणिक सत्र <span id="session-badge">...</span>
       </div>
-      <h1>🏛️ डॉ. भावर सिंह पोर्टे आदिवासी कॉलेज, मरवाही</h1>
+      <h1>🏛️ डॉ. भंवर सिंह पोर्टे आदिवासी कॉलेज, मरवाही</h1>
       <p class="subheading">📚 राजनीति विज्ञान (Political Science) — 4th Semester</p>
     </div>
   </header>
@@ -509,18 +587,13 @@
 
       <!-- Download Button -->
       <div class="download-wrap">
-        <a
-          href="syllabus.pdf"
-          download="syllabus.pdf"
-          class="btn-download"
-          id="syllabus-download-btn"
-          title="सिलेबस PDF डाउनलोड करें"
-        >
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-               stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-            <polyline points="7 10 12 15 17 10"/>
-            <line x1="12" y1="15" x2="12" y2="3"/>
+        <a href="syllabus.pdf" download="syllabus.pdf" class="btn-download" id="syllabus-download-btn"
+          title="सिलेबस PDF डाउनलोड करें">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+            <polyline points="7 10 12 15 17 10" />
+            <line x1="12" y1="15" x2="12" y2="3" />
           </svg>
           सिलेबस डाउनलोड करें
         </a>
@@ -530,16 +603,18 @@
     <!-- Credits Card -->
     <div class="card credits-card">
       <h2 class="card-title">✨ निर्माता</h2>
-      <hr class="section-divider" style="background: linear-gradient(90deg, transparent, rgba(255,255,255,0.25), transparent);" />
+      <hr class="section-divider"
+        style="background: linear-gradient(90deg, transparent, rgba(255,255,255,0.25), transparent);" />
       <p class="credits-name">खिलेश प्रजापति</p>
-      <p class="credits-note">राजनीति विज्ञान — 4th Semester &nbsp;|&nbsp; शैक्षणिक सत्र <span id="session-credits">...</span></p>
+      <p class="credits-note">राजनीति विज्ञान — 4th Semester &nbsp;|&nbsp; शैक्षणिक सत्र <span
+          id="session-credits">...</span></p>
     </div>
 
   </main>
 
   <!-- ====== FOOTER ====== -->
   <footer>
-    <p><strong>डॉ. भावर सिंह पोर्टे आदिवासी कॉलेज, मरवाही</strong></p>
+    <p><strong>डॉ. भंवर सिंह पोर्टे आदिवासी कॉलेज, मरवाही</strong></p>
     <div class="footer-divider"></div>
     <p>राजनीति विज्ञान विभाग &nbsp;|&nbsp; 4th Semester &nbsp;|&nbsp; सत्र <span id="session-footer">...</span></p>
     <p style="margin-top: 6px; font-size:0.78rem; opacity:0.55;">
@@ -547,65 +622,66 @@
     </p>
   </footer>
 
-<script>
-  // ===== AUTO SESSION YEAR (Indian Academic Calendar) =====
-  // June–Dec  → current year start  (e.g. Jun 2026 → 2026-27)
-  // Jan–May   → previous year start (e.g. Apr 2026 → 2025-26)
-  function getSessionYear() {
-    const now   = new Date();
-    const year  = now.getFullYear();
-    const month = now.getMonth() + 1; // 1 = Jan, 6 = June
-    const startYear = month >= 6 ? year : year - 1;
-    const endYY     = String(startYear + 1).slice(-2); // last 2 digits
-    return startYear + '-' + endYY;
-  }
-
-  function applySession() {
-    const session = getSessionYear();
-    ['session-badge', 'session-credits', 'session-footer'].forEach(function(id) {
-      const el = document.getElementById(id);
-      if (el) el.textContent = session;
-    });
-  }
-
-  // ===== DYNAMIC GREETING BASED ON DEVICE TIME =====
-  function updateGreeting() {
-    const now  = new Date();
-    const hour = now.getHours();
-    const min  = now.getMinutes();
-    const sec  = now.getSeconds();
-
-    const hh = String(hour).padStart(2, '0');
-    const mm = String(min).padStart(2, '0');
-    const ss = String(sec).padStart(2, '0');
-
-    let greetText, emoji;
-    if (hour >= 5 && hour < 12) {
-      greetText = 'सुप्रभात! शुभ प्रभात';
-      emoji     = '🌅';
-    } else if (hour >= 12 && hour < 17) {
-      greetText = 'नमस्कार! शुभ दोपहर';
-      emoji     = '☀️';
-    } else if (hour >= 17 && hour < 20) {
-      greetText = 'शुभ संध्या! Good Evening';
-      emoji     = '🌇';
-    } else {
-      greetText = 'शुभ रात्रि! Good Night';
-      emoji     = '🌙';
+  <script>
+    // ===== AUTO SESSION YEAR (Indian Academic Calendar) =====
+    // June–Dec  → current year start  (e.g. Jun 2026 → 2026-27)
+    // Jan–May   → previous year start (e.g. Apr 2026 → 2025-26)
+    function getSessionYear() {
+      const now = new Date();
+      const year = now.getFullYear();
+      const month = now.getMonth() + 1; // 1 = Jan, 6 = June
+      const startYear = month >= 6 ? year : year - 1;
+      const endYY = String(startYear + 1).slice(-2); // last 2 digits
+      return startYear + '-' + endYY;
     }
 
-    document.getElementById('greeting-text').textContent = greetText;
-    document.getElementById('greeting-emoji').textContent = emoji;
-    document.getElementById('live-clock').textContent     = hh + ':' + mm + ':' + ss;
-  }
+    function applySession() {
+      const session = getSessionYear();
+      ['session-badge', 'session-credits', 'session-footer'].forEach(function (id) {
+        const el = document.getElementById(id);
+        if (el) el.textContent = session;
+      });
+    }
 
-  // ===== INIT =====
-  applySession();          // Set session year immediately on load
-  updateGreeting();        // Set greeting immediately
-  setInterval(updateGreeting, 1000); // Update clock every second
+    // ===== DYNAMIC GREETING BASED ON DEVICE TIME =====
+    function updateGreeting() {
+      const now = new Date();
+      const hour = now.getHours();
+      const min = now.getMinutes();
+      const sec = now.getSeconds();
 
-  // Re-check session at midnight (in case browser stays open overnight)
-  setInterval(applySession, 60 * 60 * 1000); // every hour
-</script>
+      const hh = String(hour).padStart(2, '0');
+      const mm = String(min).padStart(2, '0');
+      const ss = String(sec).padStart(2, '0');
+
+      let greetText, emoji;
+      if (hour >= 5 && hour < 12) {
+        greetText = 'सुप्रभात! शुभ प्रभात';
+        emoji = '🌅';
+      } else if (hour >= 12 && hour < 17) {
+        greetText = 'नमस्कार! शुभ दोपहर';
+        emoji = '☀️';
+      } else if (hour >= 17 && hour < 20) {
+        greetText = 'शुभ संध्या! Good Evening';
+        emoji = '🌇';
+      } else {
+        greetText = 'शुभ रात्रि! Good Night';
+        emoji = '🌙';
+      }
+
+      document.getElementById('greeting-text').textContent = greetText;
+      document.getElementById('greeting-emoji').textContent = emoji;
+      document.getElementById('live-clock').textContent = hh + ':' + mm + ':' + ss;
+    }
+
+    // ===== INIT =====
+    applySession();          // Set session year immediately on load
+    updateGreeting();        // Set greeting immediately
+    setInterval(updateGreeting, 1000); // Update clock every second
+
+    // Re-check session at midnight (in case browser stays open overnight)
+    setInterval(applySession, 60 * 60 * 1000); // every hour
+  </script>
 </body>
+
 </html>
